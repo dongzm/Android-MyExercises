@@ -1,16 +1,25 @@
 package com.dongzm.usingservice;
 
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.content.ServiceConnection;
 import android.os.Bundle;
+import android.os.IBinder;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements ServiceConnection {
 
+    private final static String ActivityTag = "MainActivity";
+    private Intent serviceIntent;
+    private EchoService echoService = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        serviceIntent = new Intent(this, EchoService.class);
     }
 
     @Override
@@ -48,5 +58,40 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void startService(View view){
+        startService(serviceIntent);
+    }
+
+    public void stopService(View view){
+        stopService(serviceIntent);
+    }
+
+    public void bindService(View view){
+        bindService(serviceIntent, this, Context.BIND_AUTO_CREATE);
+        echoService = null;
+    }
+
+    public void unbindService(View view){
+        unbindService(this);
+    }
+
+    public void getCurrentNum(View view){
+        if (echoService != null){
+            Log.e(ActivityTag, "当前的服务中的数字" + echoService.getCurrentNum());
+        }
+    }
+
+    @Override
+    public void onServiceConnected(ComponentName name, IBinder binder) {
+        Log.e(ActivityTag, "onServiceConnected");
+        //获取服务示例对象
+        echoService = ((EchoService.EchoServiceBinder)binder).getService();
+    }
+
+    @Override
+    public void onServiceDisconnected(ComponentName name) {
+        Log.e(ActivityTag, "onServiceDisconnected");
     }
 }
