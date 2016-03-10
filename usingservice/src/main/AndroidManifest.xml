@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dongzm.activitylifecycle">
+    package="com.dongzm.usingservice">
 
     <application
         android:allowBackup="true"
@@ -17,15 +17,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".Aty1"
-            android:label="@string/title_activity_aty1"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.dongzm.activitylifecycle.MainActivity" />
         </activity>
     </application>
 

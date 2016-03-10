@@ -1,20 +1,16 @@
-package com.dongzm.activitylifecycle;
+package com.dongzm.usingservice;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String TagTitle = "MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        Log.e("TagTitle","onCreate");
     }
 
     @Override
@@ -54,61 +49,4 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Log.e("TagTitle", "onStart");
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.e("TagTitle", "onResume");
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Log.e("TagTitle", "onPause");
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Log.e("TagTitle", "onStop");
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        Log.e("TagTitle", "onRestart");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.e("TagTitle", "onDestroy");
-    }
-
-    public void startAty1(View view){
-        Intent i = new Intent(this, Aty1.class);
-        /*Bundle b = new Bundle();
-        b.putString("txt", "Hello Aty1");
-        i.putExtras(b);*/
-        //startActivity(i);
-        i.putExtra("txt", "Hello Aty1");
-        startActivityForResult(i, 0);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
-        String s = data.getStringExtra("result");
-        TextView textView = (TextView) findViewById(R.id.tv_result);
-        textView.setText(s);
-        super.onActivityResult(requestCode,resultCode,data);
-    }
 }
-
-
