@@ -1,1 +1,1 @@
-include ':app', ':activitylifecycle', ':usingservice'
+include ':app', ':activitylifecycle', ':usingservice', ':usingbc'
