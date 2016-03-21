@@ -1,1 +1,1 @@
-include ':app', ':activitylifecycle', ':usingservice', ':usingbc', ':readcontact'
+include ':app', ':activitylifecycle', ':usingservice', ':usingbc', ':readcontact', ':intents'
