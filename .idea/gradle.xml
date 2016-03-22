@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/intents" />
             <option value="$PROJECT_DIR$/readcontact" />
             <option value="$PROJECT_DIR$/usingbc" />
+            <option value="$PROJECT_DIR$/usinglistview" />
             <option value="$PROJECT_DIR$/usingservice" />
           </set>
         </option>
