@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">UIControls</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_aty_using_radio_group">AtyUsingRadioGroup</string>
+    <string name="title_activity_aty_using_checkbos">AtyUsingCheckbos</string>
+    <string name="title_activity_aty_using_date_picker">AtyUsingDatePicker</string>
+    <string name="title_activity_aty_using_time_picker">AtyUsingTimePicker</string>
+    <string name="title_activity_aty_using_spinner">AtyUsingSpinner</string>
+    <string name="title_activity_aty_using_progress_bar">AtyUsingProgressBar</string>
+    <string name="title_activity_aty_using_auto_complete_text_view">AtyUsingAutoCompleteTextView
+    </string>
+    <string name="title_activity_aty_using_seek_bar">AtyUsingSeekBar</string>
+    <string name="title_activity_aty_using_grid_view">AtyUsingGridView</string>
+    <string name="title_activity_aty_using_progress_dialog">AtyUsingProgressDialog</string>
+    <string name="title_activity_aty_using_notification">AtyUsingNotification</string>
+    <string name="title_activity_aty_using_scroll_view">AtyUsingScrollView</string>
+    <string name="title_activity_aty_using_rating_bar">AtyUsingRatingBar</string>
+    <string name="title_activity_aty_using_image_switcher">AtyUsingImageSwitcher</string>
+    <string name="title_activity_aty_using_gallery">AtyUsingGallery</string>
+</resources>

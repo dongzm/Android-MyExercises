@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dongzm.uicontrols">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AtyUsingRadioGroup"
+            android:label="@string/title_activity_aty_using_radio_group"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AtyUsingCheckbos"
+            android:label="@string/title_activity_aty_using_checkbos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AtyUsingDatePicker"
+            android:label="@string/title_activity_aty_using_date_picker"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AtyUsingTimePicker"
+            android:label="@string/title_activity_aty_using_time_picker"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AtyUsingSpinner"
+            android:label="@string/title_activity_aty_using_spinner"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AtyUsingProgressBar"
+            android:label="@string/title_activity_aty_using_progress_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AtyUsingAutoCompleteTextView"
+            android:label="@string/title_activity_aty_using_auto_complete_text_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AtyUsingSeekBar"
+            android:label="@string/title_activity_aty_using_seek_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AtyUsingGridView"
+            android:label="@string/title_activity_aty_using_grid_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AtyUsingProgressDialog"
+            android:label="@string/title_activity_aty_using_progress_dialog"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AtyUsingNotification"
+            android:label="@string/title_activity_aty_using_notification"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AtyUsingScrollView"
+            android:label="@string/title_activity_aty_using_scroll_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AtyUsingRatingBar"
+            android:label="@string/title_activity_aty_using_rating_bar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AtyUsingImageSwitcher"
+            android:label="@string/title_activity_aty_using_image_switcher"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AtyUsingGallery"
+            android:label="@string/title_activity_aty_using_gallery"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
