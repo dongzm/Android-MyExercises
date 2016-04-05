@@ -20,6 +20,7 @@
             <option value="$PROJECT_DIR$/usingbc" />
             <option value="$PROJECT_DIR$/usinglistview" />
             <option value="$PROJECT_DIR$/usingservice" />
+            <option value="$PROJECT_DIR$/usingtoast" />
           </set>
         </option>
       </GradleProjectSettings>
