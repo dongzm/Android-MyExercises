@@ -1,1 +1,1 @@
-include ':app', ':activitylifecycle', ':usingservice', ':usingbc', ':readcontact', ':intents', ':usinglistview', ':uicontrols', ':usingbaseadapter'
+include ':app', ':activitylifecycle', ':usingservice', ':usingbc', ':readcontact', ':intents', ':usinglistview', ':uicontrols', ':usingbaseadapter', ':backbutton'
