@@ -19,6 +19,7 @@
             <option value="$PROJECT_DIR$/usingbaseadapter" />
             <option value="$PROJECT_DIR$/usingbc" />
             <option value="$PROJECT_DIR$/usinglistview" />
+            <option value="$PROJECT_DIR$/usingnotification" />
             <option value="$PROJECT_DIR$/usingservice" />
             <option value="$PROJECT_DIR$/usingtoast" />
           </set>
