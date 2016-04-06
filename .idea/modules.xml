@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/intents/intents.iml" filepath="$PROJECT_DIR$/intents/intents.iml" />
       <module fileurl="file://$PROJECT_DIR$/multouch/multouch.iml" filepath="$PROJECT_DIR$/multouch/multouch.iml" />
       <module fileurl="file://$PROJECT_DIR$/readcontact/readcontact.iml" filepath="$PROJECT_DIR$/readcontact/readcontact.iml" />
+      <module fileurl="file://$PROJECT_DIR$/surfaceview/surfaceview.iml" filepath="$PROJECT_DIR$/surfaceview/surfaceview.iml" />
       <module fileurl="file://$PROJECT_DIR$/uicontrols/uicontrols.iml" filepath="$PROJECT_DIR$/uicontrols/uicontrols.iml" />
       <module fileurl="file://$PROJECT_DIR$/usingbaseadapter/usingbaseadapter.iml" filepath="$PROJECT_DIR$/usingbaseadapter/usingbaseadapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/usingbc/usingbc.iml" filepath="$PROJECT_DIR$/usingbc/usingbc.iml" />
